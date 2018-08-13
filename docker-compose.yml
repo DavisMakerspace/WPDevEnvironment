@@ -1,0 +1,25 @@
+version: '3.1'
+
+services:
+
+  wordpress:
+    image: wordpress:4.9
+    depends_on:
+      - mysql
+    restart: always
+    volumes:
+      - ./volumes/wordpress:/var/www/html
+      - ../themes:/var/www/html/wp-content/themes
+    ports:
+      - 8080:80
+    environment:
+      WORDPRESS_DB_PASSWORD: example
+      WORDPRESS_DEBUG: 1
+
+  mysql:
+    image: mysql:5.7
+    restart: always
+    volumes:
+      - ./volumes/mysql:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: example
