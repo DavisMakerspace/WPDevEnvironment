@@ -3,13 +3,13 @@
 Prerequisites:
 1. [Docker](https://www.docker.com/products/docker-desktop)
 2. [Git](https://git-scm.com/downloads)
-  - Or use your favorite package manager (`brew`, whatever your linux distro uses, etc.)
+    - Or use your favorite package manager (`brew`, whatever your linux distro uses, etc.)
 3. [Github Account](https://github.com/join)
 4. Send an email to `board@lists.davismakerspace.org` that contains:
-  - A request to be added to the Davis Makerspace Github organization (if you want to contribute changes)
-  - A request for access to the website database
-  - Your Github username
-  - Your desired Wordpress username (if approved we will send you a password)
+    - A request to be added to the Davis Makerspace Github organization (if you want to contribute changes)
+    - A request for access to the website database
+    - Your Github username
+    - Your desired Wordpress username (if approved we will send you a password)
 
 Create a top level directory to hold all your work. We suggest `dms-website` but you can use anything you want.
 
