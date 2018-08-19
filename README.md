@@ -1,6 +1,6 @@
 # Setting up the development environment
 
-Prerequisites:
+## Prerequisites:
 1. [Docker](https://www.docker.com/products/docker-desktop)
 2. [Git](https://git-scm.com/downloads)
     - Or use your favorite package manager (`brew`, whatever your linux distro uses, etc.)
@@ -10,6 +10,8 @@ Prerequisites:
     - A request for access to the website database
     - Your Github username
     - Your desired Wordpress username (if approved we will send you a password)
+
+## Get Started
 
 Create a top level directory to hold all your work. We suggest `dms-website` but you can use anything you want.
 
@@ -38,7 +40,7 @@ Your directory structure should look something like the following now:
         dmsWPtheme/
 ```
 
-# Getting everything running
+## Getting everything running
 
 To start Wordpress run the following command from inside the development environment repository (`WPDevEnvironment` directory):
 
@@ -47,6 +49,8 @@ $ docker-compose up
 ```
 
 The first time you run this command it may take a while to complete as it will need to download the container images. Once you stop seeing text scrolling through your terminal window go ahead and try the next step. If you can't access the link in the next step be patient and try again in a bit.
+
+## Wordpress
 
 To access Wordpress once the environment is running:
 - Open browser
