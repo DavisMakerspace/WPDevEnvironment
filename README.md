@@ -2,10 +2,10 @@
 
 Prerequisites:
 1. [Docker](https://www.docker.com/products/docker-desktop)
-1. [Git](https://git-scm.com/downloads)
+2. [Git](https://git-scm.com/downloads)
   - Or use your favorite package manager (`brew`, whatever your linux distro uses, etc.)
-1. [Github Account](https://github.com/join)
-1. Send an email to `board@lists.davismakerspace.org` that contains:
+3. [Github Account](https://github.com/join)
+4. Send an email to `board@lists.davismakerspace.org` that contains:
   - A request to be added to the Davis Makerspace Github organization (if you want to contribute changes)
   - A request for access to the website database
   - Your Github username
