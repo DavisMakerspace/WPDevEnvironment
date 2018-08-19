@@ -5,23 +5,25 @@ Prerequisites:
 1. [Git](https://git-scm.com/downloads)
   - Or use your favorite package manager (`brew`, whatever your linux distro uses, etc.)
 1. [Github Account](https://github.com/join)
-1. Ask to be a member of the [Davis Makerspace group](https://github.com/DavisMakerspace) on Github
-1. Open an issue to have a user and password created for the [existing WP site](https://wp.davismakerspace.org/).
-1. Open an issue and ask for a copy of the WP database
+1. Send an email to `board@lists.davismakerspace.org` that contains:
+  - A request to be added to the Davis Makerspace Github organization (if you want to contribute changes)
+  - A request for access to the website database
+  - Your Github username
+  - Your desired Wordpress username (if approved we will send you a password)
 
 Create a top level directory to hold all your work. We suggest `dms-website` but you can use anything you want.
 
 - Inside the top level directory, clone the development environment:
 
 ```
-$ git clone <repo>
+$ git clone https://github.com/DavisMakerspace/WPDevEnvironment.git
 ```
 
 * Inside the top level directory, create a `themes` directory
 
 * [Fork the dmsWPtheme](https://help.github.com/articles/fork-a-repo/)
 
-* Inside the 'themes' directory clone **your fork** of the dmsWPtheme repo.
+* Inside the 'themes' directory clone **your fork** of the dmsWPtheme repository.
 
 ```
 $ git clone <repo>
@@ -31,14 +33,14 @@ Your directory structure should look something like the following now:
 
 ```
 ./dms-website
-    dev-env/
+    WPDevEnvironment/
     themes/
         dmsWPtheme/
 ```
 
 # Getting everything running
 
-To start Wordpress run the following command from inside the development environment repository:
+To start Wordpress run the following command from inside the development environment repository (`WPDevEnvironment` directory):
 
 ```
 $ docker-compose up
@@ -72,7 +74,7 @@ In order to make changes to the site:
 
 ## Tips
 
-To start WP over from scratch (will remove all DB content) run the following from the development environment directory:
+To start WP over from scratch (will remove all DB content) run the following from the development environment directory (`WPDevEnvironment`):
 
 ```
 $ docker-compose down -v
